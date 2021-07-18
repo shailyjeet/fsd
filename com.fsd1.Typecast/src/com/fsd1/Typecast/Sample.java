@@ -60,3 +60,20 @@ public class Sample {
 	}
 
 }
+
+
+//Package -> Class -> Methods -> Method Params -> Variables -> Processing code
+
+// byte -> char -> short -> int -> long -> float -> double
+
+//upcasting - auto done by Java Compiler, no loss of data
+
+//downcasting - explicit, involves loss of Magnitude and Precision.
+
+//com.xyz.typecast
+
+// chars = 'C' , int = 105, boolean = true / fale, float = 10.52f, double = 10.52
+
+// char - 1 Byte, String = 'NandaKishore'
+
+//Typecasting will not work in Method Invocation.
