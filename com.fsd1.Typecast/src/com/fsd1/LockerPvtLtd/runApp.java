@@ -13,6 +13,8 @@ public class runApp {
 	 * @param args
 	 */
 
+	static mainMenu obj = new mainMenu();
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
@@ -28,9 +30,19 @@ public class runApp {
 		System.out.println("Enter 2. to search, add or delete files in the directory");
 		System.out.println("Enter 3. to Exit the Application");
 
+		do {
+			
+			obj.mainMenuimplementation();
+			
+		} while (true);
+
 	}
 
 }
+
+
+
+
 
 
 
