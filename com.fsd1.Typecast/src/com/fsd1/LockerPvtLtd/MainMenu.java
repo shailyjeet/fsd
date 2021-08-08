@@ -6,14 +6,17 @@ package com.fsd1.LockerPvtLtd;
  */
 import java.util.Scanner;
 
-public class mainMenu {
+public class MainMenu {
 	/**
-	 * @param args
+	 * MainMenu Java application program provides menu options 
+	 * 1 to get the files in directory
+	 * 2 to search, add file in the directory
+	 * 3 Exit maain Application.
 	 */
 
 	static Scanner sc = new Scanner(System.in);
-	static mainMenuImpl mmi = new mainMenuImpl();
-	static subMenu sm = new subMenu();
+	static MainMenuImpl mmi = new MainMenuImpl();
+	static SubMenu sm = new SubMenu();
 	
 
 	public void mainMenuimplementation() 

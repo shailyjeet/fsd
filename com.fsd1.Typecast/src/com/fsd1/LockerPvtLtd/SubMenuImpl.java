@@ -8,14 +8,19 @@ import java.util.Scanner;
  * @author JJ
  *
  */
-public class subMenuImpl {
+public class SubMenuImpl {
 
-	static String path = mainMenuImpl.path;
+	static String path = MainMenuImpl.path;
 	static Scanner sc1 = new Scanner(System.in);
 	static Scanner sc2 = new Scanner(System.in);
 	static Scanner sc3 = new Scanner(System.in);
 
-	public void searchfile() {
+	/**
+	 * The Method searchfile() does not return anything.
+	 * The method just prints Found if the specified filename exists in the directory.
+	 */
+	
+	public void searchFile() {
 		System.out.println("Please enter the file name");
 		String filename = sc1.next();
 		File searchfile = new File(path + "/" + filename);
@@ -28,7 +33,13 @@ public class subMenuImpl {
 
 	}
 
-	public void addfile() {
+	/**
+	 * The Method addfile() does not return anything
+	 * The addfile() simply creates the filename of extenstion provided.
+	 * The method also checks if mentioned file already exists in the directory.
+	 * If filename specified is not created it prints out error message.
+	 */
+	public void addFile() {
 		System.out.println("Please enter the file name to be added in the directory" + " " + path);
 
 		String filename = sc2.next();
@@ -52,8 +63,13 @@ public class subMenuImpl {
 		}
 
 	}
-
-	public void deletefile() {
+	
+	/**
+	 * The method deletefile() does not return anything.
+	 * The method simply deletes the filename specified.
+	 * Error message is printed if spcified filename is not deleted.
+	 */
+	public void deleteFile() {
 		
 		System.out.println("Please enter the file name to be deleted from the directory:" + " " + path);
 		String filename = sc3.next();

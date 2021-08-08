@@ -7,13 +7,14 @@ package com.fsd1.LockerPvtLtd;
  * @author JJ
  *
  */
-public class runApp {
+public class RunApp {
 
 	/**
-	 * @param args
+	 *  runApp is the first Java program that is called.
+	 *  It calls MainMenu.java 
 	 */
 
-	static mainMenu obj = new mainMenu();
+	static MainMenu obj = new MainMenu();
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

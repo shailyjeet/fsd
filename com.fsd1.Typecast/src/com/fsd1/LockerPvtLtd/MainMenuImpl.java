@@ -8,13 +8,17 @@ import java.io.File;
 import java.util.Scanner;
 
 
-public class mainMenuImpl 
+public class MainMenuImpl 
 {
 	
 	static String path = "C:\\Users\\shail\\eclipse-workspace\\com.fsd1.Typecast\\src\\com\\fsd1\\LockerPvtLtd\\Documents";
-	static mainMenu obj = new mainMenu();
+	static MainMenu obj = new MainMenu();
 	
-	// Method to Retrieve file names in the directory (ASC order)
+	/**
+	 * Method to Retrieve file names in the directory (ASC order)
+	 * The method does not return anything.
+	 * The method displays list of files in the current Documents directory.
+	 */
 	public void getFileNames() 
 	{
 		
@@ -39,6 +43,12 @@ public class mainMenuImpl
 						
 		}
 	}
+	
+	/**
+	 * Method to exit an application. Before exit, It will prompt a question
+	 * Y/Y is Yes and it exit an application
+	 * N/n is NO  and it will take to Main Menu.
+	 */
 	
 	public void exitApplication()
 	{
