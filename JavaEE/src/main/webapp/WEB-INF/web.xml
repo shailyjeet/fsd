@@ -12,22 +12,22 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-	<!--  Add Servlet start -->
+	<!-- Add  start -->
 	<servlet>
-	<servlet-name>GetHandler</servlet-name>
-	<servlet-class>GetHandler</servlet-class>
+		<servlet-name>GetHandler</servlet-name>
+		<servlet-class>GetHandler</servlet-class>
 	</servlet>
 	<servlet>
-	<servlet-name>PostHandler</servlet-name>
-	<servlet-class>PostHandler</servlet-class>
+		<servlet-name>PostHandler</servlet-name>
+		<servlet-class>PostHandler</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>GetHandler</servlet-name>
-		<url-pattern>/gethandler</url-pattern>	
+		<url-pattern>/gethandler</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>PostHandler</servlet-name>
-		<url-pattern>/posthandler</url-pattern>	
+		<url-pattern>/posthandler</url-pattern>
 	</servlet-mapping>
-	<!--  Add Servlet end -->
+	<!-- Add end -->
 </web-app>
