@@ -13,13 +13,9 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 	<!-- Add start -->
-	<servlet>
-		<servlet-name>GetHandler</servlet-name>
-		<servlet-class>GetHandler</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>GetHandler</servlet-name>
-		<url-pattern>/gethandler</url-pattern>
-	</servlet-mapping>
+
+
+
+
 	<!-- Add end -->
 </web-app>
