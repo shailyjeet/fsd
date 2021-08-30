@@ -1,12 +1,11 @@
 package com.code.web.jdbc;
 
-public class Users 
-{
+public class Users {
 
 	private int admin_id;
 	private String username;
 	private String password;
-	
+
 	public Users(int admin_id, String username, String password) {
 		super();
 		this.admin_id = admin_id;
@@ -47,28 +46,6 @@ public class Users
 	@Override
 	public String toString() {
 		return "Users [admin_id=" + admin_id + ", username=" + username + ", password=" + password + "]";
-	}	
-	
-	
-	
-	
+	}
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

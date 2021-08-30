@@ -12,10 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-
 @WebServlet("/ControllerServlet")
-public class ControllerServlet extends HttpServlet
-{
+public class ControllerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	private DbUtil DbUtil;
@@ -93,8 +91,7 @@ public class ControllerServlet extends HttpServlet
 	}
 
 	private void updateFlight(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		
-		
+
 		// read flight info from form data
 		int flight_id = Integer.parseInt(request.getParameter("flightId"));
 		String name = request.getParameter("name");
@@ -142,7 +139,7 @@ public class ControllerServlet extends HttpServlet
 		float ticket_price = Float.parseFloat(request.getParameter("ticket_price"));
 
 		// create a new flight object
-		Flight theFlight = new Flight( name, source, destination, email, day, ticket_price);
+		Flight theFlight = new Flight(name, source, destination, email, day, ticket_price);
 
 		// add the student to the database
 		DbUtil.addFlight(theFlight);
@@ -151,11 +148,10 @@ public class ControllerServlet extends HttpServlet
 		listFlights(request, response);
 	}
 
-	
 	private void listFlights(HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 		// get flights from db util
-		List<Flight> flights =  DbUtil.getFlights();
+		List<Flight> flights = DbUtil.getFlights();
 
 		// add flights to the request
 		request.setAttribute("FLIGHT_LIST", flights);

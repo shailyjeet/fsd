@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
-
 @WebServlet("/AdminServlet")
 public class AdminServlet extends HttpServlet {
 
@@ -19,9 +17,10 @@ public class AdminServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doPost(request,response);
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doPost(request, response);
 	}
 
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
@@ -31,10 +30,11 @@ public class AdminServlet extends HttpServlet {
 			HttpSession session = req.getSession();
 			session.setAttribute("userid", userid);
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cheap_o_fly", "cheap_o_user",	"cheap_o_pass");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cheap_o_fly", "cheap_o_user",
+					"cheap_o_pass");
 			Statement st = con.createStatement();
-			ResultSet rs = st
-					.executeQuery("select * from admin where Username='" + userid + "' and Password='" + password + "'");
+			ResultSet rs = st.executeQuery(
+					"select * from admin where Username='" + userid + "' and Password='" + password + "'");
 			if (rs.next()) {
 				res.sendRedirect("Admin.jsp");
 

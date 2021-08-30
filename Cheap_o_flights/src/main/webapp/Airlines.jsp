@@ -41,6 +41,11 @@
 <body>
 	<div id="header">
 		<h1>Admin Dashboard</h1>
+		<div>
+			<form action="Admin.jsp">
+				<button type="submit" class="btn btn-dark">Back To Admin</button>
+			</form>
+		</div>
 	</div>
 	<div id="table">
 		<h3 id="table_title">Airlines Information</h3>

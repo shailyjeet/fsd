@@ -43,7 +43,7 @@
 			autocomplete="off">
 			<label class="form-label">Admin Id</label> <input type="text"
 				class="form-control" name="userid" required> <label
-				class="form-label">Admin Password</label> <input type="text"
+				class="form-label">Admin Password</label> <input type="password"
 				class="form-control" name="password" required> <input
 				type="submit" class="btn btn-primary" id="loginbutton" value="Login">
 		</form>

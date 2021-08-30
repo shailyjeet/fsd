@@ -39,8 +39,17 @@
 
 </head>
 <body>
+
+
+
 	<div id="header">
 		<h1>Admin Dashboard</h1>
+		<div>
+			<form action="Admin.jsp">
+				<button type="submit" class="btn btn-dark">Back To Admin</button>
+			</form>
+		</div>
+
 	</div>
 	<div id="table">
 		<h3 id="table_title">Places Information</h3>
@@ -54,27 +63,31 @@
 			</thead>
 			<tbody>
 				<%
-  			try{
-  				Class.forName("com.mysql.cj.jdbc.Driver");
-  				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/cheap_o_fly","cheap_o_user","cheap_o_pass");
-  				Statement st=con.createStatement();
-				ResultSet rs=st.executeQuery("select * from places");
-	while(rs.next())
-	{
-%>
+				try {
+					Class.forName("com.mysql.cj.jdbc.Driver");
+					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cheap_o_fly", "cheap_o_user",
+					"cheap_o_pass");
+					Statement st = con.createStatement();
+					ResultSet rs = st.executeQuery("select * from places");
+					while (rs.next()) {
+				%>
 
 				<tr>
-					<th><%=rs.getString("place_id") %></th>
-					<th><%=rs.getString("source") %></th>
-					<th><%=rs.getString("destination") %></th>
+					<th><%=rs.getString("place_id")%></th>
+					<th><%=rs.getString("source")%></th>
+					<th><%=rs.getString("destination")%></th>
 				</tr>
-				<%}}catch(Exception e)
-  			{
-	  System.out.print(e);
-  			}
-%>
+				<%
+				}
+				} catch (Exception e) {
+				System.out.print(e);
+				}
+				%>
 			</tbody>
 		</table>
 	</div>
+
+
 </body>
+
 </html>

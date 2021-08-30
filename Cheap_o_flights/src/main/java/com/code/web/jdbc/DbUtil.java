@@ -104,7 +104,7 @@ public class DbUtil {
 			myStmt.setString(4, theFlight.getEmail());
 			myStmt.setString(5, theFlight.getDay());
 			myStmt.setFloat(6, theFlight.getTicket_price());
-			
+
 			// execute sql insert
 			myStmt.execute();
 

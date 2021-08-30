@@ -20,7 +20,7 @@
 <link type="text/css" rel="stylesheet" href="css/add-student-style.css">
 
 <style>
-#</style>
+</style>
 
 </head>
 <body>
@@ -28,11 +28,12 @@
 		<h1>Admin Dashboard</h1>
 
 		<div id="subgroup">
-			<a href="UserControllerServlet"><button class="btn btn-primary">Manage Users</button></a> 
-			<a href="ControllerServlet"><button class="btn btn-primary">Manage Flight</button></a> 
-			<a href="Places.jsp"><button class="btn btn-primary">Places</button></a> 
-			<a href="Airlines.jsp"><button class="btn btn-primary">Airlines</button></a> 
-			<a href="HomePage.jsp"><button class="btn btn-dark">Logout</button></a>
+			<a href="UserControllerServlet"><button class="btn btn-primary">Manage
+					Users</button></a> <a href="ControllerServlet"><button
+					class="btn btn-primary">Manage Flight</button></a> <a href="Places.jsp"><button
+					class="btn btn-primary">Places</button></a> <a href="Airlines.jsp"><button
+					class="btn btn-primary">Airlines</button></a> <a href="HomePage.jsp"><button
+					class="btn btn-dark">Logout</button></a>
 		</div>
 	</div>
 	<div id="table">
@@ -51,34 +52,32 @@
 			<tbody>
 
 
-			<%
-  			try{
-				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/cheap_o_fly","cheap_o_user","cheap_o_pass");
-			
-				Statement st=con.createStatement();
-				ResultSet rs=st.executeQuery("select * from flights");
-				while(rs.next())
-					{
-			%>
+				<%
+				try {
+					Class.forName("com.mysql.cj.jdbc.Driver");
+					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cheap_o_fly", "cheap_o_user",
+					"cheap_o_pass");
+
+					Statement st = con.createStatement();
+					ResultSet rs = st.executeQuery("select * from flights");
+					while (rs.next()) {
+				%>
 				<tr>
-					<th><%=rs.getString("Flight_id") %></th>
-					<th><%=rs.getString("Name") %></th>
-					<th><%=rs.getString("Source") %></th>
-					<th><%=rs.getString("Destination") %></th>
-					<th><%=rs.getString("To_Day") %></th>
-					<th><%=rs.getString("Ticket_Price") %></th>
+					<th><%=rs.getString("Flight_id")%></th>
+					<th><%=rs.getString("Name")%></th>
+					<th><%=rs.getString("Source")%></th>
+					<th><%=rs.getString("Destination")%></th>
+					<th><%=rs.getString("To_Day")%></th>
+					<th><%=rs.getString("Ticket_Price")%></th>
 				</tr>
-			<%
-					}
+				<%
 				}
-				catch(Exception e)
-  				{
-	  				System.out.print(e);
-  				}
-			%>
+				} catch (Exception e) {
+				System.out.print(e);
+				}
+				%>
 			</tbody>
-			</table>
+		</table>
 	</div>
 
 

@@ -1,8 +1,7 @@
 package com.code.web.jdbc;
 
-public class Flight 
-{
-	
+public class Flight {
+
 	private int flight_id;
 	private String name;
 	private String source;
@@ -10,7 +9,7 @@ public class Flight
 	private String email;
 	private String day;
 	private float ticket_price;
-	
+
 	public Flight(String name, String source, String destination, String email, String day, float ticket_price) {
 		super();
 		this.name = name;
@@ -96,24 +95,3 @@ public class Flight
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
