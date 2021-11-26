@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+    <entry loc="C:\Program Files\Java\jre1.8.0_291" stamp="1634499250518"/>
     <entry loc="C:\Program Files\Java\jre1.8.0_301" stamp="1628745783116"/>
     <entry loc="C:\Program Files\Java\jdk-16.0.2" stamp="1628744341048"/>
+    <entry loc="C:\Program Files\Java\jdk1.8.0_291\jre" stamp="1634499200581"/>
+    <entry loc="C:\Program Files\Java\jdk1.8.0_291" stamp="1634499250734"/>
     <entry loc="C:\Users\shail\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205" stamp="1626575738659"/>
     <entry loc="C:\Users\shail\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre" stamp="1626575738653"/>
+    <entry loc="C:\Program Files\Java\jdk1.8.0_291\bin" stamp="1634499199878"/>
 </dirs>
