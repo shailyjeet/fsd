@@ -1,0 +1,28 @@
+
+install a
+
+npm install -g @angular/cli
+
+ng version
+
+ng help
+
+# create new project 
+ng new my-first-project 
+
+# Run the project 
+ng serve
+
+
+ng serve --open
+
+ng serve --port 5100 --open
+
+ng generate component sales-person-list
+ng generate class sales-person-list/SalesPerson
+
+
+
+
+Mail Id: rajasekar.rs525@gmail.com
+Password: 950 040 0926

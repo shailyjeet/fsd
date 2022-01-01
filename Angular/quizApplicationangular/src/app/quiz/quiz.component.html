@@ -1,0 +1,40 @@
+<div class="container" style="width: 50rem;  height: 20rem;">
+
+
+    <div id="questions" *ngIf="questions.length > 0 && num < questions.length; else elseBlock ">
+
+        <h2>Current Score: {{points}}</h2>
+        <br>
+        <h2>Ques: {{this.num +1}}
+
+            <h2 [innerHtml]=" questions[num].question"></h2>
+        </h2>
+        <ul>
+            <li *ngFor="let ans of questions[num].incorrect_answers">
+                <button class="btn btn-light my-1" [innerHtml]="ans"
+                    (click)="checkAnswer(questions[num].correct_answer, ans)"></button>
+
+            </li>
+        </ul>
+    </div>
+    <ng-template #elseBlock>
+        <h2 class="score">You Scored: {{points}}</h2>
+        <button class="btn btn-primary my-1" (click)="start()">Restart Quiz</button>
+        <!-- <app-results></app-results> -->
+        <div id="results">
+            <hr>
+
+            <ul *ngFor="let obj of questions" style="color:white;">
+                <h5 style="color: white;">
+
+                    Question:</h5>
+                <li [innerHtml]=" obj.question | json" style="color:white; font-size:20px;"></li>
+
+                Answer: <li [innerHtml]=" obj.correct_answer | json" style="color:rgb(85, 235, 85)"></li>
+
+            </ul>
+        </div>
+    </ng-template>
+
+
+</div>

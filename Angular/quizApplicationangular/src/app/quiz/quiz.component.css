@@ -1,0 +1,14 @@
+.btn:hover {
+    color: rgb(168, 147, 147);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  #questions {
+    color: white;
+  }
+  .score {
+    color: white;
+  }
+  
